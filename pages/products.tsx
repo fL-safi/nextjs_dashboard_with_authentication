@@ -45,7 +45,7 @@ const products = (props: Props) => {
                   description={product.description}
                   brand={product.brand}
                   category={product.category}
-                  thumbnail={product.thumbnail}
+                  image={product.thumbnail}
                   price={product.price}
                   rating={product.rating}
                   stock={product.stock}

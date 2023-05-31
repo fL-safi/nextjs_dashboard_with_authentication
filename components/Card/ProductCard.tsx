@@ -1,11 +1,12 @@
 import React from "react";
 
+
 type Props = {
     title: string,
     description: String,
     brand: number,
     category: String,
-    thumbnail: String,
+    image: any,
     price: number,
     rating: number,
     stock: number,
@@ -15,14 +16,14 @@ type Props = {
 };
 
 
-const ProductCard = (props: Props) => {
+const ProductCard =  (props: Props)  => {
   return (
           <div className="wrapper">
             <div className="product-info">
               <div className="product-text">
                 <div className="product-img">
                   <img
-                    src={props.thumbnail}
+                    src={props.image}
                     alt="product"
                   />
                 </div>
