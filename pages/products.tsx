@@ -21,21 +21,8 @@ const products = (props: Props) => {
 
   return (
     <div>
-      {session && (
-        <div className="product-page-container">
-          <h1>Trending Poducts</h1>
-        </div>
-      )}
-
-      {!session && (
-        <div className="product-page-container">
-          <h1>Please Login to see Products</h1>
-        </div>
-      )}
-
       <div className="product-container">
         {productInfo &&
-          session &&
           productInfo.length &&
           productInfo.map((product: any) => {
             return (
